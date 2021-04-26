@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SinopsisActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/ivgambarbuku"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/buku1"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tvjudulbuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/labelharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Harga : "
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tvhargabuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Buku"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/labelharga"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/labelsinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/tvsinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis"
+            android:textSize="15sp"
+            android:justificationMode="inter_word"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+</ScrollView>
